@@ -10,6 +10,8 @@ Hlavním cílem projektu je vytvoření **webové aplikace s 3D produkty**, kter
 📌 pracovat s **3D objekty** pomocí Three.js
 
 📌 využívat DALLE **AI**
+
+📌 dostupná na internetu
 ## Technologie
 [React](https://react.dev) | [Three.js](https://threejs.org) | [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | [TailwindCSS](https://tailwindcss.com) | [Framer Motion](https://www.framer.com/motion)
 ## Zdroje
