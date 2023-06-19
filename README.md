@@ -9,7 +9,7 @@ Hlavním cílem projektu je vytvoření **webové aplikace s 3D produkty**, kter
 
 📌 pracovat s **3D objekty** pomocí Three.js
 
-📌 využívat DALLE **AI**
+📌 generovat obrázky přes DALLE **AI**
 
 📌 dostupná na internetu
 ## Technologie
