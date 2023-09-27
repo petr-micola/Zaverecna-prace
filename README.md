@@ -1,18 +1,13 @@
 # Závěrečná práce 🖥️
 Autor: Petr Mičola
 
-Datum:
 ## Cíle
-Hlavním cílem projektu je vytvoření **webové aplikace s 3D produkty**, která bude:
+Hlavním cílem projektu je vytvoření **webové aplikace s administrací uživatelů**, která:
 
-📌 vytvořena pomocí JS knihovny React
+📌 bude vytvořena pomocí webového frameworku **Django**
 
-📌 pracovat s **3D objekty** pomocí Three.js
+📌 umožní **autentifikaci** uživatele skrze účet Microsoft
 
-📌 generovat obrázky přes DALLE **AI**
-
-📌 dostupná na internetu
+📌 poskytne **znovupoužitelný backend** pro jiné aplikace
 ## Technologie
-[React](https://react.dev) | [Three.js](https://threejs.org) | [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | [TailwindCSS](https://tailwindcss.com) | [Framer Motion](https://www.framer.com/motion)
-## Zdroje
-[ChatGPT 3D Product Website](https://github.com/adrianhajdin/project_threejs_ai)
+[Django](https://www.djangoproject.com/) | [django-allauth](https://django-allauth.readthedocs.io/en/latest/)
