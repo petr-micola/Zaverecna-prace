@@ -3,7 +3,10 @@
 <h1>Django Social Auth</h1>
 
 {% if request.user.is_authenticated %}
-<a href="{% url 'account_logout' %}">Log Out</a>
+<p>Signed in as {{ user }}.<p>
+<p><a href="{% url 'account_logout' %}">Sign Out</a></p>
 {% else %}
-<a href="{% provider_login_url 'github' %}">Sign In Via GitHub</a>
+<p><a href="{% url 'account_login' %}">Sign In</a>
+<p><a href="{% provider_login_url 'github' %}">Sign In Via GitHub</a></p>
+<p><a href="{% url 'account_signup' %}">Sign Up</a></p>
 {% endif %}
