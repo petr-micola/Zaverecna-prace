@@ -93,7 +93,7 @@ SOCIALACCOUNT_PROVIDERS = {
     },
     'microsoft': {
         'APP': {
-            'tenant': '97c2b87c-be8d-4fad-a461-897ba09bdf32',
+            'TENANT': '97c2b87c-be8d-4fad-a461-897ba09bdf32',
             'client_id': '64997699-ca76-4461-bfc8-95721126d572',
         }
     },
