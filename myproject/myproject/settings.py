@@ -67,6 +67,8 @@ ROOT_URLCONF = 'myproject.urls'
 
 LOGIN_REDIRECT_URL = '/'
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
