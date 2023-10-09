@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
+    'myapp',
+
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -68,6 +70,10 @@ ROOT_URLCONF = 'myproject.urls'
 LOGIN_REDIRECT_URL = '/'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+AUTH_USER_MODEL = 'myapp.CustomUser'
+
+ACCOUNT_USER_MODEL = 'myapp.CustomUser'
 
 TEMPLATES = [
     {
