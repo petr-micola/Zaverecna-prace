@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+from decouple import config
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -19,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u1qtq&z8zff_qnsl27t=&%m86rs$8)2(7vy5v3=%)wkzsv#_ld'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -95,14 +97,14 @@ TEMPLATES = [
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'APP': {
-            'client_id': 'e53fa2fe60f7b429c705',
-            'secret': 'ee8c0d6988a9b1751f04448e774c0de482358671',
+            'client_id': config('GITHUB_CLIENT_ID'),
+            'secret': config('GITHUB_SECRET'),
         }
     },
     'microsoft': {
         'APP': {
-            'TENANT': '97c2b87c-be8d-4fad-a461-897ba09bdf32',
-            'client_id': '64997699-ca76-4461-bfc8-95721126d572',
+            'TENANT': config('MICROSOFT_TENANT'),
+            'client_id': config('MICROSOFT_CLIENT_ID'),
         }
     },
 }
