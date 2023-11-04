@@ -10,4 +10,4 @@ Hlavním cílem projektu je vytvoření **webové aplikace s administrací uživ
 
 📌 poskytne **znovupoužitelný backend** pro jiné aplikace
 ## Technologie
-[Django](https://www.djangoproject.com/) | [django-allauth](https://django-allauth.readthedocs.io/en/latest/)
+[Django](https://www.djangoproject.com/) | [django-allauth](https://django-allauth.readthedocs.io/en/latest/) | [Soft UI Dashboard](https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-dashboard)
