@@ -2,6 +2,7 @@ aiofiles==23.1.0
 ajsonrpc==1.2.0
 anyio==3.6.2
 asgiref==3.7.2
+backports.zoneinfo==0.2.1
 bottle==0.12.23
 certifi==2022.12.7
 cffi==1.15.1
@@ -11,6 +12,7 @@ colorama==0.4.6
 cryptography==41.0.4
 defusedxml==0.7.1
 Django==4.2.5
+django-admin-soft-dashboard==1.0.12
 django-allauth==0.57.0
 h11==0.14.0
 idna==3.4
