@@ -1,4 +1,5 @@
-version: '3'
+version: '3.8'
+
 services:
   web:
     build: .
@@ -19,5 +20,6 @@ services:
       - POSTGRES_USER=myproject
       - POSTGRES_PASSWORD=myproject
       - POSTGRES_DB=myproject_dev
+
 volumes:
   postgres_data:
