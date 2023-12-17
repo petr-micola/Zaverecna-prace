@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+
+<h2>User Profile</h2>
+<p><strong>Email:</strong> {{ user_profile.email }}</p>
+<p><strong>Username:</strong> {{ user_profile.username }}</p>
+
+<a href="{% url 'edit_profile' %}">Edit Profile</a>
+
+</body>
+</html>
