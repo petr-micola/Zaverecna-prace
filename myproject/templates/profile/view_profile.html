@@ -1,17 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-</head>
-<body>
+{% extends "account/base.html" %}
 
-<h2>User Profile</h2>
-<p><strong>Email:</strong> {{ user_profile.email }}</p>
-<p><strong>Username:</strong> {{ user_profile.username }}</p>
+{% block content %}
 
-<a href="{% url 'edit_profile' %}">Edit Profile</a>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content center">
+                <header>Welcome</header>
+                <div>
+                    <img src="media/{{ user_profile.profile_picture }}" alt="Profile picture">
+                </div>
+                <div>
+                    <p>{{ user_profile.username }}</p>
+                </div>
+                <div>
+                    <p>
+                        <a href="{% url 'edit_profile' %}">Edit Profile</a>
+                    </p>
+                    <form method="POST" action="{% url 'account_logout' %}">
+                        {% csrf_token %}
+                        <div class="field button-field">
+                            <button type="submit">Log Out</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</body>
-</html>
+{% endblock content %}

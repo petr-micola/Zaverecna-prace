@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Profile</title>
-</head>
-<body>
+{% extends "account/base.html" %}
 
-<h2>Edit Profile</h2>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Save Changes</button>
-</form>
+{% block content %}
 
-<a href="{% url 'view_profile' %}">Cancel</a>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Edit Profile</header>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Save Changes</button>
+                </form>
 
-</body>
-</html>
+                <a href="{% url 'view_profile' %}">Cancel</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
