@@ -12,6 +12,7 @@ then
 fi
 
 python manage.py flush --no-input
+python manage.py makemigrations
 python manage.py migrate
 
 DJANGO_SUPERUSER_USERNAME=admin DJANGO_SUPERUSER_PASSWORD=admin DJANGO_SUPERUSER_EMAIL=admin@example.com python manage.py createsuperuser --noinput

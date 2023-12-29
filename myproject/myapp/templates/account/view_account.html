@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Profile" %}{% endblock head_title %}
+
+{% block content %}
+
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content center">
+                <header>Welcome</header>
+                <div>
+                    <img src="{{ user_profile.profile_picture.url }}" alt="Profile picture">
+                </div>
+                <div>
+                    <p>{{ user_profile.username }}</p>
+                </div>
+                <div>
+                    <p>
+                        <a href="{% url 'edit_account' %}">Edit Profile</a>
+                    </p>
+                    <form method="POST" action="{% url 'account_logout' %}">
+                        {% csrf_token %}
+                        <div class="field button-field">
+                            <button type="submit">Log Out</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

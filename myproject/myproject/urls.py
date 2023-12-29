@@ -7,10 +7,11 @@ from django.conf.urls.static import static
 from myapp.views import *
 
 urlpatterns = [
-    path('', view_profile, name='view_profile'),
-    path('edit_profile/', edit_profile, name='edit_profile'),
-    path('admin/', admin.site.urls),
+    path('', quiz, name='quiz'),
     path('accounts/', include('allauth.urls')),
+    path('account/view', view_account, name='view_account'),
+    path('account/edit', edit_account, name='edit_account'),
+    path('admin/', admin.site.urls),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

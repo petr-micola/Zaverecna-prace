@@ -70,7 +70,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'myproject.urls'
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/account/view'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 
