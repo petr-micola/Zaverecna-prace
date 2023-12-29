@@ -4,7 +4,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from myapp.views import *
+from myapp.views import quiz, view_account, edit_account
 
 urlpatterns = [
     path('', quiz, name='quiz'),

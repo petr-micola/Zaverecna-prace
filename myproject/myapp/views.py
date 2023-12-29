@@ -4,7 +4,8 @@ from .forms import CustomUserForm
 
 
 def quiz(request):
-    return render(request, 'quiz/quiz.html')
+    user = request.user
+    return render(request, 'quiz/quiz.html', {'user': user})
 
 
 @login_required

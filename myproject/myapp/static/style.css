@@ -45,7 +45,7 @@ nav ul div {
 @media (max-width: 768px) {
     nav ul div {
         width: 100%;
-        justify-content: center!important;
+        justify-content: center !important;
     }
 }
 
@@ -111,7 +111,7 @@ form {
 }
 
 .form-edit .field {
-    margin-top: 40px!important;
+    margin-top: 40px !important;
 }
 
 .form .field {
@@ -269,4 +269,22 @@ img {
 
 .center {
     text-align: center;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
 }
