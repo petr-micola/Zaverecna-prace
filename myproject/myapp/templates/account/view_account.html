@@ -15,11 +15,12 @@
                 </div>
                 <div>
                     <p>{{ user_profile.username }}</p>
+                    <p>{{ user_profile.email }}</p>
+                </div>
+                <div class="form-link">
+                    <a href="{% url 'edit_account' %}">Edit Profile</a>
                 </div>
                 <div>
-                    <p>
-                        <a href="{% url 'edit_account' %}">Edit Profile</a>
-                    </p>
                     <form method="POST" action="{% url 'account_logout' %}">
                         {% csrf_token %}
                         <div class="field button-field">

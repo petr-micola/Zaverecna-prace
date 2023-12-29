@@ -7,16 +7,36 @@
 {% block content %}
 
     <section class="container forms">
-        <div class="form login">
+        <div class="form form-edit">
             <div class="form-content">
                 <header>Edit Profile</header>
                 <form method="post" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit">Save Changes</button>
-                </form>
+                    <div class="field input-field">
+                        <label for="id_email">Email</label>
+                        <input type="email" name="email" value="{{ user_profile.email }}" maxlength="254" required
+                               id="id_email">
+                    </div>
 
-                <a href="{% url 'view_account' %}">Cancel</a>
+                    <div class="field input-field">
+                        <label for="id_username">Username</label>
+                        <input type="text" name="username" value="{{ user_profile.username }}" maxlength="30" required
+                               id="id_username">
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="id_profile_picture">Profile Picture</label>
+                        <input type="file" name="profile_picture" accept="image/*" id="id_profile_picture">
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Save Changes</button>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="/account/view">Cancel</a>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

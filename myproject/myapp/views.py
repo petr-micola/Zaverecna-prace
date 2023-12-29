@@ -2,8 +2,10 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .forms import CustomUserForm
 
+
 def quiz(request):
     return render(request, 'quiz/quiz.html')
+
 
 @login_required
 def view_account(request):
@@ -22,4 +24,4 @@ def edit_account(request):
     else:
         form = CustomUserForm(instance=user_profile)
 
-    return render(request, 'account/edit_account.html', {'form': form})
+    return render(request, 'account/edit_account.html', {'form': form, 'user_profile': user_profile})
