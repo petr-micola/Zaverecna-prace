@@ -4,13 +4,15 @@
 **Školní rok:** 2023/2024  
 
 ## Cíle
-Hlavním cílem projektu je vytvoření **webové aplikace s autentizací uživatelů**, která:
+Hlavním cílem projektu je vytvoření **webové aplikace**, která:
 
 📌 bude vytvořena pomocí webového frameworku **Django**
 
 📌 umožní **autentizaci** uživatele skrze účty GitHub a Microsoft
 
 📌 uživateli umožní **úpravu profilu**
+
+📌 nabídne **pokročilou administraci**
 
 📌 poskytne **znovupoužitelný backend** pro jiné aplikace
 
